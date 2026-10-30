@@ -1,0 +1,13 @@
+﻿ID,Descripción,Origen,Prioridad,Estado,Versión,Release,Responsable,Criterio de aceptación
+RF01,Autenticación de usuario con cuenta de prueba,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),Credenciales válidas permiten acceder; inválidas muestran error
+RF02,Consultar saldo disponible,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),Saldo presentado coincide con cuenta de prueba
+RF03,Validar destinatario activo distinto del emisor,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),"Rechaza inexistente, inactivo y propia cuenta"
+RF04,Validar monto positivo dentro del saldo,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),"Rechaza cero, negativos, no numéricos, más de dos decimales y exceso"
+RF05,Mostrar resumen previo obligatorio,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),Saldo no varía antes de confirmar
+RF06,Cancelar sin alterar saldos,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),"Sin débito, abono ni comprobante al cancelar"
+RF07,Ejecutar transferencia y actualizar ambos saldos,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),Un débito y un abono correctos por confirmación
+RF08,Mostrar comprobante digital,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),"ID, destinatario, monto, fecha y resultado coinciden"
+RNF01,Autonomía y facilidad de uso,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),4 de 5 participantes completan S/10 en 90 segundos
+RNF02,Tiempo de carga entre pantallas,Avance de proyecto (equipo),Should,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),Umbral no definido en avance: completar y acordar antes de aprobar
+RNF03,Idempotencia de una solicitud confirmada,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),10 reintentos con mismo ID = un débito
+RNF04,Proteger vistas sin sesión,Avance de proyecto (equipo),Must,Propuesto,1.0,Prototipo v1,Analista de requerimientos (por asignar),Bloqueo de navegación sin sesión (solo demo local)

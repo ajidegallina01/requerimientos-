@@ -1,0 +1,12 @@
+﻿Necesidad,Requerimiento,Versión,Caso de uso,Clases o componente,Prueba,Estado de prueba
+Transferir dinero ficticio con claridad y control,RF01,1.0,CU01,"Usuario, Cuenta",P01,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RF02,1.0,CU02,Cuenta,P02,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RF03,1.0,CU03,"Cuenta, Transferencia",P03,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RF04,1.0,CU03,"Cuenta, Transferencia",P04,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RF05,1.0,CU03,Transferencia,P05,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RF06,1.0,CU03,Transferencia,P06,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RF07,1.0,CU03,"Cuenta, Transferencia",P07,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RF08,1.0,CU04,"Transferencia, Comprobante",P08,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RNF01,1.0,CU01-CU04,Interfaz,P09,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RNF03,1.0,CU03,Transferencia,P11,Pendiente de ejecución documentada
+Transferir dinero ficticio con claridad y control,RNF04,1.0,CU01-CU04,Sesión,P12,Pendiente de ejecución documentada

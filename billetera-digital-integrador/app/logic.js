@@ -1,0 +1,8 @@
+/* Lógica académica independiente de la interfaz. NO sirve para dinero real. */
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;root.BilleteraLogic=api})(typeof globalThis==='object'?globalThis:this,function(){
+const START=[{id:'ana',nombre:'Ana Torres',saldo:150,activo:true},{id:'luis',nombre:'Luis Pérez',saldo:80,activo:true},{id:'maria',nombre:'María Rojas',saldo:60,activo:true}];
+function fresh(){return {accounts:START.map(a=>({...a})),transactions:[]}}
+function cents(v){let s=String(v).trim();if(!/^(?:0|[1-9]\d*)(?:\.\d{1,2})?$/.test(s))throw Error('Ingresa un monto numérico con máximo 2 decimales.');let n=Math.round(Number(s)*100);if(!Number.isSafeInteger(n)||n<=0)throw Error('El monto debe ser mayor que cero.');return n}
+function check(state,from,to,value){let a=state.accounts.find(x=>x.id===from&&x.activo),b=state.accounts.find(x=>x.id===to&&x.activo);if(!a)throw Error('La cuenta emisora no está activa.');if(!b||from===to)throw Error('Selecciona un destinatario activo diferente de tu cuenta.');let n=cents(value);if(n>Math.round(a.saldo*100))throw Error('Saldo insuficiente.');return {a,b,n}}
+function transfer(state,from,to,value,id){if(!id||typeof id!=='string')throw Error('Identificador de solicitud obligatorio.');const old=state.transactions.find(t=>t.idSolicitud===id);if(old)return old;const {a,b,n}=check(state,from,to,value);a.saldo=(Math.round(a.saldo*100)-n)/100;b.saldo=(Math.round(b.saldo*100)+n)/100;const t={idSolicitud:id,emisor:from,destinatario:to,monto:n/100,fecha:new Date().toISOString(),estado:'Completada'};state.transactions.push(t);return t}
+return {fresh,cents,check,transfer};});

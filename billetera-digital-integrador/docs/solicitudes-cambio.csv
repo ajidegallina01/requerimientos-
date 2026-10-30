@@ -1,0 +1,3 @@
+﻿ID,Fecha,Solicitante,Requerimiento afectado,Descripción,Justificación,Prioridad,Decisión,Versión objetivo,Estado
+SC-BDI-001,Por asignar,Equipo (propuesta),RF08,Agregar opción de compartir comprobante,Facilitar verificación por receptor,Could,"Diferido (propuesta, sin aprobación formal)",Sin cambio,Propuesto
+SC-BDI-002,Por asignar,Equipo (propuesta),RF04,Añadir advertencia de importe alto en prototipo,Reducir errores de ingreso,Should,Por evaluar,Sin cambio,Propuesto
